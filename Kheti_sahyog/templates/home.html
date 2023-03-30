@@ -1,0 +1,12 @@
+
+{% block content %}
+  <h2>Home Page</h2>
+  {% if user.is_authenticated %}
+    <p>Welcome, {{ user.username }}!</p>
+    <a href="{% url 'logout' %}" type = "button" class="btn btn primary">LogOut</a>
+  {% else %}
+    <p>Please <a href="{% url 'login' %}">login</a> to continue.</p>
+  {% endif %}
+  <button><a href="{% url 'buyrent' %}">Buy-Rent</a></button>
+  <button><a href="{% url 'sellrent' %}">Sell-Rent</a></button>
+{% endblock %}
