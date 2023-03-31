@@ -1,12 +1,65 @@
+<html>
+<head>
+<title>
+  Home Page
+</title>
+</head>
+<style media="screen">
 
+    .navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		.navbar a {
+			float: right;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+    .navbar a #names{
+      float:left;
+    }
+
+</style>
+<body>
 {% block content %}
-  <h2>Home Page</h2>
+<div class="navbar">
+  
+  {% comment %} <a class="active" href="#home">Home</a> {% endcomment %}
+  <a href="#contact">Contact Us</a>
+  <a href="#about" id="names">KHETI SAHYOG</a>
+</div>
+
+<!-- Page content -->
+<div style="margin-top:80px" id="">
+  
+</div>
+  
   {% if user.is_authenticated %}
     <p>Welcome, {{ user.username }}!</p>
     <a href="{% url 'logout' %}" type = "button" class="btn btn primary">LogOut</a>
   {% else %}
     <p>Please <a href="{% url 'login' %}">login</a> to continue.</p>
   {% endif %}
-  <button><a href="{% url 'buyrent' %}">Buy-Rent</a></button>
-  <button><a href="{% url 'sellrent' %}">Sell-Rent</a></button>
+  <button><a href="{% url 'buyrent' %}">Rent</a></button>
+  <button><a href="{% url 'sellrent' %}">Buy</a></button>
 {% endblock %}
+
+</body>
+</html>
