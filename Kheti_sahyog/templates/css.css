@@ -1,0 +1,193 @@
+.main {
+    min-height: 49vw;
+    background-image: url('bg-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav {
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left {
+    margin-left: 10px;
+}
+
+nav .right {
+    margin-right: 10px;
+}
+
+nav a {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+nav p {
+    color: white;
+    font-size: 35px;
+    margin: 0;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(216, 216, 168);
+
+}
+
+.logout-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.logout-button:hover {
+    color: rgb(216, 216, 168);
+}
+
+/* 
+body {
+    background-image: url('bg-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+.div1 {
+    padding-top: 20px;
+    text-align: center;
+    color: bisque;
+    font-size: 20px;
+    margin-bottom: 20px;
+    min-height: 100%;
+
+}
+
+.div1-name {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.div1-intro {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    /* use flexbox to align buttons */
+    justify-content: center;
+    /* horizontally center buttons */
+    align-items: center;
+    /* vertically center buttons */
+    height: 200px;
+    /* set height of div */
+
+}
+
+.button1,
+.button2 {
+    padding: 10px 20px;
+    /* set padding for buttons */
+    font-size: 16px;
+    /* set font size for buttons */
+    background-color: white;
+    /* set background color for buttons */
+    color: gray;
+    /* set text color for buttons */
+    border-color: gray;
+    /* remove button border */
+    border-radius: 4px;
+    /* round button corners */
+    cursor: pointer;
+    /* change cursor to pointer when hovering over button */
+    margin: 0 10px;
+    /* add margin between buttons */
+}
+
+
+
+.div2 {
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px 20% 0px 20%;
+    font-size: 18px;
+    color: black;
+    padding-bottom: 20px;
+    background-color: rgb(204, 221, 255);
+}
+
+.div2-intro {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.div2-content {
+    padding-top: 20px;
+    color: gray;
+}
+
+.collage {
+    max-width: 500px;
+    float: left;
+    border: 3px solid white;
+    margin-right: 20px;
+
+}
+
+.div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: burlywood;
+    ;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+
+}
+
+
+
+.text-box h2 {
+    font-size: 40px;
+
+}
+
+.text-box p {
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
