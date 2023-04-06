@@ -1,94 +1,184 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title> Equipments for Sale</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-      
-      header {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-      }
-      
-      main {
-        padding: 20px;
-      }
-      
-      section {
-        margin: 20px 0;
-      }
-      
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      
-      li {
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 20px;
-      }
-      
-      h2 {
-        margin-top: 0;
-      }
-      
-      h3 {
-        margin-top: 0;
-      }
-      
-      a {
-        display: inline-block;
-        background-color: #333;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-      }
-      
-      a:hover {
-        background-color: #555;
-      }
-      
-  </style>
-  <body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kheti Sahyog - SELL</title>
+    <link rel="stylesheet" href="sell.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
     <header>
-      <h1>Used Equipment for Sale</h1>
+        <nav class="navbar">
+            <div class="right">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </nav>
     </header>
-    <main>
-      <section>
-        <h2>Equipment List</h2>
-        <ul>
-          <li>
-            <h3>Item Name</h3>
-            <p>Description of the item.</p>
-            <p>Price: $100</p>
-            <a href="#">Contact Seller</a>
-          </li>
-          <li>
-            <h3>Item Name</h3>
-            <p>Description of the item.</p>
-            <p>Price: $200</p>
-            <a href="#">Contact Seller</a>
-          </li>
-          <li>
-            <h3>Item Name</h3>
-            <p>Description of the item.</p>
-            <p>Price: $300</p>
-            <a href="#">Contact Seller</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © 2023. All rights reserved.
+    <section class="main-home">
+        <div class="main-text">
+            <h1>Sell Equipments</h1>
+        </div>
+
+        </div>
+    </section>
+
+    <h2 class="heading" id="about">Equipments</h2>
+
+    <section class="row">
+
+
+        <div class="column">
+            <img class="image" src="pr-1.jpg" alt="Image 1" onclick="openModal('pr-1.jpg')">
+            <div class="price">
+                <h4>Tractor</h4>
+                <p>Rs 100</p>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <img class="image" src="pr-2.jpg" alt="Image 2" onclick="openModal('pr-2.jpg')">
+            <div class="price">
+                <h4>Harvestor</h4>
+                <p>Rs 100 </p>
+            </div>
+
+        </div>
+
+
+        <div class="column">
+            <img class="image" src="pr-3.jpg" alt="Image 3" onclick="openModal('pr-3.jpg')">
+            <div class="price">
+                <h4>Fertilizer Spreader</h4>
+                <p>Rs 100</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="row">
+
+        <div class="column">
+            <img class="image" src="pr-4.jpg" alt="Image 1" onclick="openModal('pr-4.jpg')">
+            <div class="price">
+                <h4>Harrows</h4>
+                <p>Rs 100</p>
+            </div>
+
+        </div>
+
+
+        <div class="column">
+            <img class="image" src="pr-5.jpg" alt="Image 2" onclick="openModal('pr-5.jpg')">
+            <div class="price">
+                <h4>Seeders</h4>
+                <p>Rs 100</p>
+            </div>
+
+        </div>
+
+
+        <div class="column">
+            <img class="image" src="pr-6.jpg" alt="Image 3" onclick="openModal('pr-6.jpg')">
+            <div class="price">
+                <h4>Balers</h4>
+                <p>Rs 100</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="row">
+
+
+        <div class="column">
+            <img class="image" src="pr-1.jpg" alt="Image 1" onclick="openModal('pr-1.jpg')">
+            <div class="price">
+                <h4>Tractor</h4>
+                <p>Rs 100</p>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <img class="image" src="pr-2.jpg" alt="Image 2" onclick="openModal('pr-2.jpg')">
+            <div class="price">
+                <h4>Harvestor</h4>
+                <p>Rs 100 </p>
+            </div>
+
+        </div>
+
+
+        <div class="column">
+            <img class="image" src="pr-3.jpg" alt="Image 3" onclick="openModal('pr-3.jpg')">
+            <div class="price">
+                <h4>Fertilizer Spreader</h4>
+                <p>Rs 100</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg">
+        </div>
+    </div>
+
+
+    <hr>
+
+    <footer class="footer" id="contact">
+        <p class="footer-text">Contact Us</p>
+        <a class="fa fa-github fa-2x" href="https://github.com/skgx/kheti-sahyog"></a>
+        <p class="footer-text">Copyright © 2023. kheti-sahyog All rights reserved. | Design by Team Maverick.</p>
+
     </footer>
-  </body>
+
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const links = document.querySelectorAll('.navbar a');
+        const text = document.createElement('div');
+        text.classList.add('text');
+        text.textContent = 'Kheti Sahyog';
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+                links.forEach(link => link.classList.add('scrolled'));
+                navbar.appendChild(text);
+            } else {
+                navbar.classList.remove('scrolled');
+                links.forEach(link => link.classList.remove('scrolled'));
+                navbar.removeChild(text);
+            }
+        });
+
+
+        function openModal(src) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("modalImg").src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+    </script>
+</body>
+
 </html>
