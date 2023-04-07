@@ -17,14 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from login import views
 from buy import views as v
-
+from sell import views as v1
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup/', views.SignupPage,name='signup'),
     path('login/', views.LoginPage,name='login'),
     path('', views.HomePage,name='home'),
     path('logout/', views.logoutPage,name='logout'),
-    path('buyrent/',v.buyrent,name ='buyrent'),
-    path('sellrent/',v.sellrent,name='sellrent'),
+    path('rent/',v.rent,name ='rent'),
+    path('sell/',v1.sell,name='sell'),
 ]
     
