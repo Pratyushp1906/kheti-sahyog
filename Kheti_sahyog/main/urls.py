@@ -18,6 +18,7 @@ from django.urls import path
 from login import views
 from buy import views as v
 from sell import views as v1
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup/', views.SignupPage,name='signup'),
