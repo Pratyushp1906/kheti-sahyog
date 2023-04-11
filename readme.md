@@ -1,15 +1,15 @@
-#Kheti Sahyog
+**Kheti Sahyog**
 Kheti Sahyog is a web application built using Django. The website is designed to help farmers by enabling them to rent their spare equipment to other farmers at reasonable rates and vice versa. Additionally, the website allows farmers to purchase new equipment from sellers.
 
-##Getting Started
+*Getting Started*
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-##Prerequisites
+*Prerequisites*
 Python 3.6 or higher
 Django 3.0 or higher
 PostgreSQL or MySQL (optional)
 
-##Installing
+*Installing*
 1.Clone the repository
 
 Create and activate a virtual environment
@@ -32,20 +32,21 @@ python manage.py runserver
 
 The development server should now be accessible at http://localhost:8000/
 
-##Configuration
+*Configuration*
 The following environment variables need to be set:
 
 SECRET_KEY: Django secret key
 DATABASE_URL: URL of the database
 
-#Deployment
+*Deployment*
 The application can be deployed using a WSGI server such as gunicorn and a reverse proxy such as nginx or Apache.
 
-##Built With
+*Built With*
 Django - The web framework used
 Bootstrap - The front-end framework used
-##Authors
+
+*Authors*
 Name - Kumar Sanskar , Saurabh Kumar Gupta , Pratyush Pandey , Adarsh Kumar
 
-##License
+*License*
 This project is licensed under the MIT License - see the LICENSE file for details.
